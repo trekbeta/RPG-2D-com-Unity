@@ -19,7 +19,7 @@ public class MovePersonagem : MonoBehaviour {
         InputPersonagem();
         transform.Translate(direcao * vel * Time.deltaTime);
         
-        Animato(direcao);
+        Animacao(direcao);
 
     }
 
@@ -45,7 +45,7 @@ public class MovePersonagem : MonoBehaviour {
         }
     }
 
-    void Animato(Vector2 dir)
+    void Animacao(Vector2 dir)
     {
         anim.SetFloat("x", dir.x);
         anim.SetFloat("y", dir.y);    
